@@ -11,8 +11,8 @@
         <viewModel:ScoreViewModel x:Name="viewModel"/>
     </Window.DataContext>
     <Grid>
-        <StackPanel Name="spTimeLeft" HorizontalAlignment="Left" Height="100" Margin="384,196,0,0" VerticalAlignment="Top" Width="100">
-            <TextBlock TextWrapping="Wrap" Name="tblkTimeLeft" Text="{Binding Path=TimeLeft, StringFormat=F2, Mode=TwoWay}"/>
+        <StackPanel Name="spTimeLeft" HorizontalAlignment="Left" Height="100" Margin="332,106,0,0" VerticalAlignment="Top" Width="100">
+            <TextBlock TextWrapping="Wrap" Name="tblkTimeLeft" Text="{Binding Path=TimeLeft, StringFormat=F2}"/>
             <TextBlock TextWrapping="Wrap" Name="tblkTimeNow" Text="{Binding Path=TotalPoints, StringFormat=F2}"/>
             <Button Height="auto" Name="AnswerButton" Content="Answer" Command="{Binding CalcScoreCommand, Mode=OneTime}"  />
             <Button Height="auto" Name="StartQuizButton" Content="Start" Command="{Binding StartQuizCommand, Mode=OneTime}"  />

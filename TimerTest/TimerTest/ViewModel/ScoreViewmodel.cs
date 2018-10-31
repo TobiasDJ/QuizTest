@@ -22,8 +22,6 @@ namespace TimerTest.ViewModel
 
         ScoreModel scoreModel = new ScoreModel();
 
-        bool TimerIsRunning = false;
-
         public double TimeLeft
         {
             get => scoreModel.TimeLeft;
@@ -64,8 +62,8 @@ namespace TimerTest.ViewModel
 
         private bool TimerCanStart()
         {
-            TimerIsRunning = true;
-            return false;
+            bool paramsAreValid = (TimeLeft >= 20);
+            return paramsAreValid;
         }
 
         private ICommand _calcScoreCommand;
