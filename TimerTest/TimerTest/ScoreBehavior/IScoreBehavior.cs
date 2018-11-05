@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TimerTest.ScoreBehavior
 {
-    interface IScoreBehavior
+    public interface IScoreBehavior
     {
         double CalculateScore();
         

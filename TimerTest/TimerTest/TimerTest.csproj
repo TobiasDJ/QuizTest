@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Option.cs" />
+    <Compile Include="Model\Question.cs" />
+    <Compile Include="Model\Quiz.cs" />
     <Compile Include="Model\ScoreModel.cs" />
     <Compile Include="ScoreBehavior\IScoreBehavior.cs" />
     <Compile Include="ScoreBehavior\SimpleScore.cs" />
